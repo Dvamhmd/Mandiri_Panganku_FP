@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Mandiri Panganku</string>
+    <string name="image">image</string>
+    <string name="welcome">Selamat datang</string>
+    <string name="accept">Dengan mendaftar anda meyetujui</string>
+    <string name="policy"><![CDATA[Ketentuan & Kebijakan Kami]]></string>
+    <string name="login">Masuk</string>
+    <string name="number">Nomor KK</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Daftar</string>
+    <string name="dont_have_account">Belum Punya Akun?</string>
+    <string name="or">ATAU</string>
+    <string name="forget">Lupa Password?</string>
+</resources>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF2E1"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:contentDescription="@string/image"
+            android:src="@drawable/picture_one"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="@string/welcome"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/abhaya_extra"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/accept"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:text="@string/policy"
+            android:textAlignment="center"
+            android:textColor="#0386D0"
+            android:textSize="18sp"
+            tools:ignore="TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="@color/white"
+            android:hint="@string/number"
+            android:inputType="number"
+            android:padding="20dp"
+            android:drawableEnd="@drawable/mail"
+            tools:ignore="Autofill,TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:padding="20dp"
+            android:drawableEnd="@drawable/lock"
+            tools:ignore="Autofill,TextContrastCheck" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingStart="60dp"
+            android:text="@string/forget"
+            android:textColor="#3E6D41"
+            android:textSize="20sp"
+            android:fontFamily="@font/abhaya_medium"
+            tools:ignore="RtlSymmetry,TextSizeCheck" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#F5B623"
+            android:text="@string/login"
+            android:textSize="22sp"
+            android:fontFamily="@font/abhaya_semi"
+            tools:ignore="TextContrastCheck" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="150dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="35dp"
+                android:background="#D9D9D9" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="20dp"
+                android:text="@string/or"
+                android:textAlignment="center"
+                android:textColor="#D9D9D9"
+                android:textSize="24sp"
+                android:fontFamily="@font/abhaya_semi"
+                tools:ignore="TextContrastCheck" />
+
+            <View
+                android:layout_width="150dp"
+                android:layout_height="3dp"
+                android:layout_marginTop="30dp"
+                android:background="#D9D9D9" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/dont_have_account"
+            android:fontFamily="@font/abhaya_semi"
+            android:textAlignment="center"
+            android:textColor="#3E6D41"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/sign_up"
+            android:fontFamily="@font/abhaya_semi"
+            android:textColor="#3E6D41"
+            android:textSize="22sp"
+            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
