@@ -21,19 +21,23 @@ class HomeActivity : AppCompatActivity(){
 
         findViewById<ImageView>(R.id.profile).setOnClickListener {
             val intent = Intent (this, ProfileActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
             startActivity(intent)
         }
         findViewById<ImageView>(R.id.profile_pic).setOnClickListener {
             val intent = Intent (this, ProfileActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
             startActivity(intent)
         }
         findViewById<ImageView>(R.id.report).setOnClickListener {
             val intent = Intent (this, ReportActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
             startActivity(intent)
         }
 
         findViewById<ImageView>(R.id.community).setOnClickListener {
             val intent = Intent (this, CommunityActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
             startActivity(intent)
         }
 

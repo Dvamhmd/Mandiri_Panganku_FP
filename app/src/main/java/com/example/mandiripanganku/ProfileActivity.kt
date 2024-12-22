@@ -23,18 +23,37 @@ class ProfileActivity : AppCompatActivity() {
 
         findViewById<ImageView>(R.id.back).setOnClickListener {
             val intent = Intent (this, HomeActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
             startActivity(intent)
         }
 
         findViewById<TextView>(R.id.exit).setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
             startActivity(intent)
         }
 
         findViewById<ImageView>(R.id.dashboard).setOnClickListener {
             val intent = Intent(this, HomeActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
             startActivity(intent)
         }
+
+        findViewById<ImageView>(R.id.community).setOnClickListener {
+            val intent = Intent(this, CommunityActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
+            startActivity(intent)
+        }
+
+        findViewById<ImageView>(R.id.report).setOnClickListener {
+            val intent = Intent(this, CommunityActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
+            startActivity(intent)
+        }
+
+
+
+
 
         val topBarTitle = findViewById<TextView>(R.id.top_bar_title)
         topBarTitle.text = getString(R.string.profil)

@@ -25,21 +25,27 @@ class ReportActivity : AppCompatActivity(){
 
         findViewById<ImageView>(R.id.back).setOnClickListener {
             val intent = Intent(this, HomeActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
             startActivity(intent)
+
         }
 
         findViewById<ImageView>(R.id.dashboard).setOnClickListener {
             val intent = Intent(this, HomeActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
             startActivity(intent)
+
         }
 
         findViewById<ImageView>(R.id.profile).setOnClickListener {
             val intent = Intent(this, ProfileActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
             startActivity(intent)
         }
 
         findViewById<ImageView>(R.id.community).setOnClickListener {
             val intent = Intent (this, CommunityActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
             startActivity(intent)
         }
 
