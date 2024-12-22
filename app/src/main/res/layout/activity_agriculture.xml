@@ -18,8 +18,8 @@
 
         <ImageView
             android:id="@+id/my_food"
-            android:layout_width="310dp"
-            android:layout_height="110dp"
+            android:layout_width="360dp"
+            android:layout_height="135dp"
             android:contentDescription="@string/agriculture"
             android:layout_gravity="center"
             android:scaleType="centerCrop"
@@ -30,8 +30,8 @@
 
         <ImageView
             android:id="@+id/my_clue"
-            android:layout_width="310dp"
-            android:layout_height="110dp"
+            android:layout_width="360dp"
+            android:layout_height="135dp"
             android:contentDescription="@string/agriculture"
             android:layout_gravity="center"
             android:scaleType="centerCrop"
@@ -42,8 +42,8 @@
 
         <ImageView
             android:id="@+id/my_report"
-            android:layout_width="310dp"
-            android:layout_height="110dp"
+            android:layout_width="360dp"
+            android:layout_height="135dp"
             android:contentDescription="@string/agriculture"
             android:layout_gravity="center"
             android:scaleType="centerCrop"
