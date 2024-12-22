@@ -46,7 +46,7 @@ class ProfileActivity : AppCompatActivity() {
         }
 
         findViewById<ImageView>(R.id.report).setOnClickListener {
-            val intent = Intent(this, CommunityActivity::class.java)
+            val intent = Intent(this, ReportActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
             startActivity(intent)
         }
