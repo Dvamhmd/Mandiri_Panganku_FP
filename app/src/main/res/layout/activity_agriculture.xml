@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/agriculture">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#FFF2E1"
+        android:layout_marginTop="60dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="80dp"/>
+
+        <ImageView
+            android:id="@+id/my_food"
+            android:layout_width="310dp"
+            android:layout_height="110dp"
+            android:contentDescription="@string/agriculture"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tanaman_panganku"
+            android:background="@drawable/rounded_corner_background"
+            android:layout_marginBottom="30dp"
+            android:elevation="8dp"/>
+
+        <ImageView
+            android:id="@+id/my_clue"
+            android:layout_width="310dp"
+            android:layout_height="110dp"
+            android:contentDescription="@string/agriculture"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/panduan_perawatan"
+            android:background="@drawable/rounded_corner_background"
+            android:layout_marginBottom="30dp"
+            android:elevation="8dp"/>
+
+        <ImageView
+            android:id="@+id/my_report"
+            android:layout_width="310dp"
+            android:layout_height="110dp"
+            android:contentDescription="@string/agriculture"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/laporan_mingguan"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/rounded_corner_background"
+            android:elevation="8dp"/>
+
+
+
+    </LinearLayout>
+
+
+    <include
+        android:id="@+id/top_bar"
+        layout="@layout/top_bar" />
+
+    <include
+        android:id="@+id/bottom_navigation"
+        layout="@layout/bottom_navigation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
