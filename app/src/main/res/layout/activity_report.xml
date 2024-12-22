@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/report"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ImageContrastCheck">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF2E1"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Laporan Terpadu"
+            android:fontFamily="@font/inter"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_marginBottom="20dp" />
+
+        <EditText
+            android:id="@+id/report_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/white"
+            android:hint="@string/report_type"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textAlignment="center"
+            tools:ignore="Autofill,VisualLintTextFieldSize,TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/report_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/white"
+            android:hint="@string/report_head"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textAlignment="center"
+            tools:ignore="Autofill,VisualLintTextFieldSize,TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/report_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/white"
+            android:hint="@string/date"
+            android:inputType="date"
+            android:padding="15dp"
+            android:textAlignment="center"
+            tools:ignore="Autofill,TextContrastCheck,VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/report_note"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/white"
+            android:hint="@string/report_note"
+            android:inputType="textMultiLine"
+            android:scrollbars="vertical"
+            android:padding="10dp"
+            android:textAlignment="center"
+            tools:ignore="Autofill,VisualLintTextFieldSize,TextContrastCheck" />
+
+        <CheckBox
+            android:id="@+id/report_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="@string/report_check"
+            android:fontFamily="@font/inter"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:checked="false" />
+        
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/lapor"
+            android:textSize="20sp"
+            android:fontFamily="@font/abhaya_extra"
+            android:backgroundTint="#F5B623" />
+
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/top_bar"
+        layout="@layout/top_bar" />
+
+    <include
+        android:id="@+id/bottom_navigation"
+        layout="@layout/bottom_navigation" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
