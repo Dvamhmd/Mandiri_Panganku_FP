@@ -38,6 +38,11 @@ class ReportActivity : AppCompatActivity(){
             startActivity(intent)
         }
 
+        findViewById<ImageView>(R.id.community).setOnClickListener {
+            val intent = Intent (this, CommunityActivity::class.java)
+            startActivity(intent)
+        }
+
 
 
     }
