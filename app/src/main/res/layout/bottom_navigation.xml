@@ -6,21 +6,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
-        android:layout_width="360dp"
-        android:layout_height="70dp"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_54sdp"
         android:orientation="horizontal"
         android:background="@drawable/bottom_nav_background"
-        android:elevation="8dp"
+        android:elevation="@dimen/_8sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
         <ImageView
             android:id="@+id/dashboard"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
             android:layout_gravity="center"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="@dimen/_4sdp"
             android:layout_weight="1"
             android:contentDescription="@string/dashboard"
             android:src="@drawable/ic_home"
@@ -28,8 +28,8 @@
 
         <ImageView
             android:id="@+id/community"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:contentDescription="@string/community"
@@ -38,8 +38,8 @@
 
         <ImageView
             android:id="@+id/search"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:contentDescription="@string/search"
@@ -48,8 +48,8 @@
 
         <ImageView
             android:id="@+id/report"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:contentDescription="@string/report"
@@ -58,10 +58,10 @@
 
         <ImageView
             android:id="@+id/profile"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
             android:layout_gravity="center"
-            android:layout_marginEnd="8dp"
+            android:layout_marginEnd="@dimen/_4sdp"
             android:layout_weight="1"
             android:contentDescription="@string/profile"
             android:src="@drawable/ic_profile"
