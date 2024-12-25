@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.activity.OnBackPressedCallback
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -47,10 +48,15 @@ class CommunityActivity : AppCompatActivity(){
             startActivity(intent)
         }
 
-
-
-
-
+        onBackPressedDispatcher.addCallback(
+            this, object : OnBackPressedCallback(true) {
+                override fun handleOnBackPressed() {
+                    val intent = Intent(this@CommunityActivity, HomeActivity::class.java)
+                    startActivity(intent)
+                    finish()
+                }
+            }
+        )
 
 
 

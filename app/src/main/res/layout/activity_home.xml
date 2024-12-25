@@ -104,8 +104,11 @@
                     android:elevation="@dimen/_5sdp"
                     android:hint="@string/search"
                     android:inputType="number"
-                    android:padding="@dimen/_8sdp"
-                    tools:ignore="Autofill,TextContrastCheck,TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+                    android:paddingStart="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_15sdp"
+                    tools:ignore="Autofill,TextContrastCheck,TouchTargetSizeCheck,DuplicateSpeakableTextCheck,VisualLintTextFieldSize" />
 
             </FrameLayout>
 
