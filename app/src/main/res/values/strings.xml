@@ -56,4 +56,6 @@
     <string name="agriculture_title">Pertanian</string>
     <string name="report_title">Laporan Terpadu</string>
     <string name="write_something">Tulis Sesuatu</string>
+    <string name="fishery_title">Perikanan</string>
+    <string name="farming_title">Peternakan</string>
 </resources>

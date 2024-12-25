@@ -46,6 +46,16 @@ class HomeActivity : AppCompatActivity(){
             startActivity(intent)
         }
 
+        findViewById<ImageView>(R.id.perikanan).setOnClickListener {
+            val intent = Intent (this, FisheryActivity::class.java)
+            startActivity(intent)
+        }
+
+        findViewById<ImageView>(R.id.peternakan).setOnClickListener {
+            val intent = Intent (this, FarmingActivity::class.java)
+            startActivity(intent)
+        }
+
 
     }
 }

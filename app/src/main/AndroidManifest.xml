@@ -29,6 +29,8 @@
         <activity android:name=".ReportActivity" />
         <activity android:name=".CommunityActivity" />
         <activity android:name=".AgricultureActivity" />
+        <activity android:name=".FarmingActivity" />
+        <activity android:name=".FisheryActivity" />
 
 
     </application>
