@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+
+<ScrollView android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/register"
+    android:fillViewport="true"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/register">
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#FFF2E1"
-        android:orientation="vertical"
-        >
+        android:layout_height="wrap_content"
+        android:background="@color/main_bg"
+        android:orientation="vertical">
+
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -21,39 +24,40 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
                 android:fontFamily="@font/abhaya_semi"
                 android:text="@string/already_have_account"
                 android:textAlignment="center"
-                android:textColor="#3E6D41"
-                android:textSize="18sp" />
+                android:textColor="@color/text"
+                android:textSize="@dimen/_15ssp" />
 
             <View
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
                 android:layout_gravity="center" />
 
             <Button
                 android:id="@+id/login"
-                android:layout_width="110dp"
+                android:layout_width="@dimen/_90sdp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="@dimen/_15sdp"
                 android:backgroundTint="@color/white"
                 android:fontFamily="@font/abhaya_semi"
                 android:text="@string/login"
-                android:textColor="#3E6D41"
-                android:textSize="20sp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
-                tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+                android:textColor="@color/text"
+                android:textSize="@dimen/_15ssp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                tools:ignore="TextContrastCheck,TouchTargetSizeCheck,VisualLintButtonSize" />
 
         </LinearLayout>
 
 
+
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="160dp"
+            android:layout_height="@dimen/_150sdp"
             android:layout_marginTop="0dp"
             android:contentDescription="@string/image"
             android:src="@drawable/picture_one" />
@@ -61,11 +65,11 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="@dimen/_10sdp"
             android:fontFamily="@font/abhaya_extra"
             android:text="@string/welcome"
             android:textAlignment="center"
-            android:textSize="22sp"
+            android:textSize="@dimen/_18ssp"
             android:textStyle="bold"
             tools:ignore="TextSizeCheck" />
 
@@ -74,90 +78,94 @@
             android:layout_height="wrap_content"
             android:text="@string/accept"
             android:textAlignment="center"
-            android:textSize="14sp" />
+            android:textSize="@dimen/_12ssp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="40dp"
+            android:layout_marginBottom="@dimen/_35sdp"
             android:text="@string/policy"
             android:textAlignment="center"
-            android:textColor="#0386D0"
-            android:textSize="14sp"
-            tools:ignore="TextContrastCheck" />
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_12sdp"
+            tools:ignore="TextContrastCheck,TextSizeCheck" />
 
         <EditText
             android:id="@+id/number"
-            android:layout_width="300dp"
+            android:layout_width="@dimen/_230sdp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="@dimen/_12sdp"
             android:background="@color/white"
             android:drawableEnd="@drawable/family"
             android:hint="@string/number"
             android:inputType="number"
-            android:padding="10dp"
-            tools:ignore="Autofill,TextContrastCheck,TouchTargetSizeCheck" />
+            android:padding="@dimen/_8sdp"
+            tools:ignore="Autofill,TextContrastCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
 
         <EditText
             android:id="@+id/password"
-            android:layout_width="300dp"
+            android:layout_width="@dimen/_230sdp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="@dimen/_12sdp"
             android:background="@color/white"
             android:drawableEnd="@drawable/lock"
             android:hint="@string/family_name"
             android:inputType="text"
-            android:padding="10dp"
-            tools:ignore="Autofill,TextContrastCheck,TextFields,TouchTargetSizeCheck" />
+            android:padding="@dimen/_8sdp"
+            tools:ignore="Autofill,TextContrastCheck,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize" />
 
         <EditText
             android:id="@+id/family"
-            android:layout_width="300dp"
+            android:layout_width="@dimen/_230sdp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="@dimen/_12sdp"
             android:background="@color/white"
             android:drawableEnd="@drawable/lock"
             android:hint="@string/family_member"
             android:inputType="number"
-            android:padding="10dp"
-            tools:ignore="Autofill,TextContrastCheck,TouchTargetSizeCheck" />
+            android:padding="@dimen/_8sdp"
+            tools:ignore="Autofill,TextContrastCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
 
         <EditText
             android:id="@+id/phone"
-            android:layout_width="300dp"
+            android:layout_width="@dimen/_230sdp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="@dimen/_12sdp"
             android:background="@color/white"
             android:drawableEnd="@drawable/lock"
             android:hint="@string/no_handphone"
-            android:padding="10dp"
+            android:padding="@dimen/_8sdp"
             android:inputType="number"
-            tools:ignore="Autofill,TextContrastCheck,TextFields,TouchTargetSizeCheck" />
+            tools:ignore="Autofill,TextContrastCheck,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize" />
 
 
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="40dp" />
+            android:layout_height="@dimen/_20sdp" />
 
         <Button
             android:id="@+id/signup"
-            android:layout_width="150dp"
+            android:layout_width="@dimen/_100sdp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginBottom="10dp"
-            android:backgroundTint="#F5B623"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:backgroundTint="@color/orange"
             android:fontFamily="@font/abhaya_semi"
             android:text="@string/next"
-            android:textSize="22sp"
-            tools:ignore="TextContrastCheck" />
+            android:textSize="@dimen/_18ssp"
+            tools:ignore="TextContrastCheck,VisualLintButtonSize" />
 
 
     </LinearLayout>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+
+

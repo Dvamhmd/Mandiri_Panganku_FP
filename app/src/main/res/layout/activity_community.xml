@@ -4,31 +4,40 @@
     android:layout_height="match_parent"
     android:id="@+id/community_activity">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#FFF2E1"
-        android:orientation="vertical"
-        android:layout_marginTop="60dp"
-        android:padding="10dp">
+        android:fillViewport="true" >
 
-        <View
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="20dp" />
+            android:layout_height="wrap_content"
+            android:background="@color/main_bg"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_45sdp"
+            android:padding="@dimen/_8sdp">
 
-        <include
-            android:id="@+id/chat1"
-            layout="@layout/bubble_chat" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_12sdp" />
 
-        <include
-            android:id="@+id/chat2"
-            layout="@layout/bubble_chat" />
+            <include
+                android:id="@+id/chat1"
+                layout="@layout/bubble_chat" />
 
-        <include
-            android:id="@+id/chat3"
-            layout="@layout/bubble_chat" />
+            <include
+                android:id="@+id/chat2"
+                layout="@layout/bubble_chat" />
 
-    </LinearLayout>
+            <include
+                android:id="@+id/chat3"
+                layout="@layout/bubble_chat" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
 
 
     <include

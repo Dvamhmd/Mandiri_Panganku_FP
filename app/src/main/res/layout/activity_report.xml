@@ -6,111 +6,120 @@
     android:layout_height="match_parent"
     tools:ignore="ImageContrastCheck">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#FFF2E1"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        android:fillViewport="true">
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="80dp" />
-
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Laporan Terpadu"
-            android:fontFamily="@font/inter"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:textAlignment="center"
-            android:layout_marginBottom="20dp" />
+            android:background="@color/main_bg"
+            android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/report_type"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginBottom="20dp"
-            android:background="@color/white"
-            android:hint="@string/report_type"
-            android:inputType="text"
-            android:padding="15dp"
-            android:textAlignment="center"
-            tools:ignore="Autofill,VisualLintTextFieldSize,TextContrastCheck" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
 
-        <EditText
-            android:id="@+id/report_head"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginBottom="20dp"
-            android:background="@color/white"
-            android:hint="@string/report_head"
-            android:inputType="text"
-            android:padding="15dp"
-            android:textAlignment="center"
-            tools:ignore="Autofill,VisualLintTextFieldSize,TextContrastCheck" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/report_title"
+                android:fontFamily="@font/inter"
+                android:textStyle="bold"
+                android:textSize="@dimen/_16ssp"
+                android:textAlignment="center"
+                android:layout_marginBottom="@dimen/_16sdp" />
 
-        <EditText
-            android:id="@+id/report_date"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginBottom="20dp"
-            android:background="@color/white"
-            android:hint="@string/date"
-            android:inputType="date"
-            android:padding="15dp"
-            android:textAlignment="center"
-            tools:ignore="Autofill,TextContrastCheck,VisualLintTextFieldSize" />
+            <EditText
+                android:id="@+id/report_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_24sdp"
+                android:layout_marginEnd="@dimen/_24sdp"
+                android:layout_marginBottom="@dimen/_14sdp"
+                android:background="@color/white"
+                android:hint="@string/report_type"
+                android:inputType="text"
+                android:padding="@dimen/_10sdp"
+                android:textAlignment="center"
+                tools:ignore="Autofill,VisualLintTextFieldSize,TextContrastCheck" />
 
-        <EditText
-            android:id="@+id/report_note"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginBottom="20dp"
-            android:background="@color/white"
-            android:hint="@string/report_note"
-            android:inputType="textMultiLine"
-            android:scrollbars="vertical"
-            android:padding="10dp"
-            android:textAlignment="center"
-            tools:ignore="Autofill,VisualLintTextFieldSize,TextContrastCheck" />
+            <EditText
+                android:id="@+id/report_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_24sdp"
+                android:layout_marginEnd="@dimen/_24sdp"
+                android:layout_marginBottom="@dimen/_14sdp"
+                android:background="@color/white"
+                android:hint="@string/report_head"
+                android:inputType="text"
+                android:padding="@dimen/_10sdp"
+                android:textAlignment="center"
+                tools:ignore="Autofill,VisualLintTextFieldSize,TextContrastCheck" />
 
-        <CheckBox
-            android:id="@+id/report_check"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:text="@string/report_check"
-            android:fontFamily="@font/inter"
-            android:textStyle="bold"
-            android:textSize="18sp"
-            android:checked="false" />
-        
-        <View
-            android:layout_width="wrap_content"
-            android:layout_height="20dp" />
+            <EditText
+                android:id="@+id/report_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_24sdp"
+                android:layout_marginEnd="@dimen/_24sdp"
+                android:layout_marginBottom="@dimen/_14sdp"
+                android:background="@color/white"
+                android:hint="@string/date"
+                android:inputType="date"
+                android:padding="@dimen/_10sdp"
+                android:textAlignment="center"
+                tools:ignore="Autofill,TextContrastCheck,VisualLintTextFieldSize" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/lapor"
-            android:textSize="20sp"
-            android:fontFamily="@font/abhaya_extra"
-            android:backgroundTint="#F5B623" />
+            <EditText
+                android:id="@+id/report_note"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_marginStart="@dimen/_24sdp"
+                android:layout_marginEnd="@dimen/_24sdp"
+                android:layout_marginBottom="@dimen/_14sdp"
+                android:background="@color/white"
+                android:hint="@string/report_note"
+                android:inputType="textMultiLine"
+                android:scrollbars="vertical"
+                android:padding="@dimen/_10sdp"
+                android:textAlignment="center"
+                tools:ignore="Autofill,VisualLintTextFieldSize,TextContrastCheck" />
+
+            <CheckBox
+                android:id="@+id/report_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_24sdp"
+                android:text="@string/report_check"
+                android:fontFamily="@font/inter"
+                android:textStyle="bold"
+                android:textSize="@dimen/_15ssp"
+                android:checked="false"
+                tools:ignore="VisualLintButtonSize" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_14sdp" />
+
+            <Button
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/orange"
+                android:fontFamily="@font/abhaya_extra"
+                android:text="@string/lapor"
+                android:textSize="@dimen/_18ssp"
+                tools:ignore="TextContrastCheck,VisualLintButtonSize" />
 
 
-    </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
 
     <include
         android:id="@+id/top_bar"

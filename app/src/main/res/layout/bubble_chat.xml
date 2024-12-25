@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="300dp"
-    android:layout_height="90dp"
-    android:id="@+id/chat"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        app:cardElevation="4dp"
-        app:cardCornerRadius="10dp"
-        tools:ignore="MissingConstraints">
+
+<androidx.cardview.widget.CardView android:layout_width="wrap_content"
+    android:id="@+id/chat"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="@dimen/_6sdp"
+    app:cardCornerRadius="@dimen/_10sdp"
+    app:cardElevation="@dimen/_4sdp"
+    tools:ignore="MissingConstraints"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -22,31 +20,29 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingStart="10dp"
-                android:paddingTop="10dp"
-                android:text="@string/joko_pranowo"
                 android:fontFamily="@font/inter"
-                android:textStyle="bold"
-                android:textSize="16sp"
+                android:paddingStart="@dimen/_9sdp"
+                android:paddingTop="@dimen/_6sdp"
+                android:text="@string/joko_pranowo"
                 android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="bold"
                 tools:ignore="RtlSymmetry" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingStart="10dp"
-                android:paddingBottom="10dp"
-                android:paddingEnd="10dp"
-                android:paddingTop="5dp"
                 android:fontFamily="@font/inter"
+                android:paddingStart="@dimen/_9sdp"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingEnd="@dimen/_9sdp"
+                android:paddingBottom="@dimen/_9sdp"
                 android:text="@string/pemimpin_mana_yang_menyakitimu"
-                android:textSize="16sp"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp" />
 
         </LinearLayout>
 
 
-
     </androidx.cardview.widget.CardView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>

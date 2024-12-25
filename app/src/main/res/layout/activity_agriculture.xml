@@ -4,58 +4,63 @@
     android:layout_height="match_parent"
     android:id="@+id/agriculture">
 
-
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="#FFF2E1"
-        android:layout_marginTop="60dp">
+        android:fillViewport="true" >
 
-        <View
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="80dp"/>
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/main_bg"
+            android:layout_marginTop="@dimen/_45sdp">
 
-        <ImageView
-            android:id="@+id/my_food"
-            android:layout_width="360dp"
-            android:layout_height="135dp"
-            android:contentDescription="@string/agriculture"
-            android:layout_gravity="center"
-            android:scaleType="centerCrop"
-            android:src="@drawable/tanaman_panganku"
-            android:background="@drawable/rounded_corner_background"
-            android:layout_marginBottom="30dp"
-            android:elevation="8dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"/>
 
-        <ImageView
-            android:id="@+id/my_clue"
-            android:layout_width="360dp"
-            android:layout_height="135dp"
-            android:contentDescription="@string/agriculture"
-            android:layout_gravity="center"
-            android:scaleType="centerCrop"
-            android:src="@drawable/panduan_perawatan"
-            android:background="@drawable/rounded_corner_background"
-            android:layout_marginBottom="30dp"
-            android:elevation="8dp"/>
+            <ImageView
+                android:id="@+id/my_food"
+                android:layout_width="@dimen/_260sdp"
+                android:layout_height="@dimen/_98sdp"
+                android:contentDescription="@string/agriculture"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/tanaman_panganku"
+                android:background="@drawable/rounded_corner_background"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:elevation="@dimen/_8sdp"/>
 
-        <ImageView
-            android:id="@+id/my_report"
-            android:layout_width="360dp"
-            android:layout_height="135dp"
-            android:contentDescription="@string/agriculture"
-            android:layout_gravity="center"
-            android:scaleType="centerCrop"
-            android:src="@drawable/laporan_mingguan"
-            android:layout_marginBottom="30dp"
-            android:background="@drawable/rounded_corner_background"
-            android:elevation="8dp"/>
+            <ImageView
+                android:id="@+id/my_clue"
+                android:layout_width="@dimen/_260sdp"
+                android:layout_height="@dimen/_98sdp"
+                android:contentDescription="@string/agriculture"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/panduan_perawatan"
+                android:background="@drawable/rounded_corner_background"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:elevation="@dimen/_8sdp"/>
+
+            <ImageView
+                android:id="@+id/my_report"
+                android:layout_width="@dimen/_260sdp"
+                android:layout_height="@dimen/_98sdp"
+                android:contentDescription="@string/agriculture"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/laporan_mingguan"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/rounded_corner_background"
+                android:elevation="@dimen/_8sdp"/>
 
 
 
-    </LinearLayout>
+        </LinearLayout>
 
+    </ScrollView>
 
     <include
         android:id="@+id/top_bar"
