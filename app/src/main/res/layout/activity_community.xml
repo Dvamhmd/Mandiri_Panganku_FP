@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
     android:id="@+id/community_activity">
 
     <ScrollView
@@ -45,7 +46,8 @@
             android:id="@+id/write"
             android:layout_width="@dimen/_250sdp"
             android:layout_height="wrap_content"
-            android:text="@string/write_something"
+            android:hint="@string/write_something"
+            android:importantForAutofill="no"
             android:textAlignment="center"
             android:inputType="text"
             android:padding="@dimen/_10sdp"
