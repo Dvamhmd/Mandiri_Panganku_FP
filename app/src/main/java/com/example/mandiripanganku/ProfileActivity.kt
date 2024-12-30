@@ -34,19 +34,19 @@ class ProfileActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        findViewById<ImageView>(R.id.dashboard).setOnClickListener {
+        findViewById<ImageView>(R.id.ic_home).setOnClickListener {
             val intent = Intent(this, HomeActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
             startActivity(intent)
         }
 
-        findViewById<ImageView>(R.id.community).setOnClickListener {
+        findViewById<ImageView>(R.id.ic_community).setOnClickListener {
             val intent = Intent(this, CommunityActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
             startActivity(intent)
         }
 
-        findViewById<ImageView>(R.id.report).setOnClickListener {
+        findViewById<ImageView>(R.id.ic_report).setOnClickListener {
             val intent = Intent(this, ReportActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
             startActivity(intent)
@@ -54,6 +54,9 @@ class ProfileActivity : AppCompatActivity() {
 
         val topBarTitle = findViewById<TextView>(R.id.top_bar_title)
         topBarTitle.text = getString(R.string.profil)
+
+        val iconProfile = findViewById<ImageView>(R.id.ic_profile)
+        iconProfile.setImageResource(R.drawable.ic_profile_clicked)
 
         onBackPressedDispatcher.addCallback(
             this, object : OnBackPressedCallback(true){

@@ -3,6 +3,7 @@ package com.example.mandiripanganku
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
+import androidx.activity.OnBackPressedCallback
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -19,7 +20,7 @@ class HomeActivity : AppCompatActivity(){
             insets
         }
 
-        findViewById<ImageView>(R.id.profile).setOnClickListener {
+        findViewById<ImageView>(R.id.ic_profile).setOnClickListener {
             val intent = Intent (this, ProfileActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
             startActivity(intent)
@@ -29,17 +30,18 @@ class HomeActivity : AppCompatActivity(){
             intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
             startActivity(intent)
         }
-        findViewById<ImageView>(R.id.report).setOnClickListener {
+        findViewById<ImageView>(R.id.ic_report).setOnClickListener {
             val intent = Intent (this, ReportActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
             startActivity(intent)
         }
 
-        findViewById<ImageView>(R.id.community).setOnClickListener {
-            val intent = Intent (this, CommunityActivity::class.java)
+        findViewById<ImageView>(R.id.ic_community).setOnClickListener {
+            val intent = Intent(this, CommunityActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
             startActivity(intent)
         }
+
 
         findViewById<ImageView>(R.id.pertanian).setOnClickListener {
             val intent = Intent (this, AgricultureActivity::class.java)
@@ -55,6 +57,19 @@ class HomeActivity : AppCompatActivity(){
             val intent = Intent (this, FarmingActivity::class.java)
             startActivity(intent)
         }
+
+        val iconHome = findViewById<ImageView>(R.id.ic_home)
+        iconHome.setImageResource(R.drawable.ic_home_clicked)
+
+        onBackPressedDispatcher.addCallback(
+            this, object : OnBackPressedCallback(true){
+                override fun handleOnBackPressed() {
+                    finishAffinity()
+                }
+            }
+        )
+
+
 
 
     }

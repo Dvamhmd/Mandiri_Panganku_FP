@@ -58,4 +58,21 @@
     <string name="write_something">Tulis Sesuatu</string>
     <string name="fishery_title">Perikanan</string>
     <string name="farming_title">Peternakan</string>
+    <string name="my_agriculture">Tanaman Panganku</string>
+    <string name="choose_your_plant">Pilih tanaman anda</string>
+    <string name="jumlah_tanaman">Jumlah tanaman</string>
+    <string name="jumlah_bibit">Jumlah Bibit</string>
+    <string name="input_bibit">Masukkan jumlah bibit</string>
+    <string name="tanggal_tanam">Tanggal tanam</string>
+    <string name="masukkan_tanggal_tanam">Masukkan tanggal tanam</string>
+    <string name="save">Simpan</string>
+    <string name="photo">Lampiran Foto</string>
+
+    <string-array name="dropdown_options">
+        <item>Kentang</item>
+        <item>Bayam</item>
+        <item>Jagung</item>
+        <item>Tomat</item>
+    </string-array>
+
 </resources>
