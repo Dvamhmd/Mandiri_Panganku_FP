@@ -45,6 +45,7 @@
 
         <activity android:name=".ClueAgricultureActivity" />
         <activity android:name=".ClueFisheryActivity" />
+        <activity android:name=".ClueFarmingActivity" />
 
 
 

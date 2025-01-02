@@ -59,6 +59,11 @@ class AgricultureActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        findViewById<ImageView>(R.id.my_clue).setOnClickListener {
+            val intent = Intent(this, ClueAgricultureActivity::class.java)
+            startActivity(intent)
+        }
+
         onBackPressedDispatcher.addCallback(
             this, object : OnBackPressedCallback(true){
                 override fun handleOnBackPressed() {

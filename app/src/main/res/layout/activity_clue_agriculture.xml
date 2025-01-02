@@ -19,15 +19,23 @@
             android:orientation="vertical" >
 
             <include
+                android:id="@+id/tomat"
+                layout="@layout/card_clue" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_8sdp" />
+
+            <include
                 android:id="@+id/kentang"
                 layout="@layout/card_clue" />
 
-            <include
-                android:id="@+id/lele"
-                layout="@layout/card_clue" />
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_8sdp" />
 
             <include
-                android:id="@+id/lele"
+                android:id="@+id/bayam"
                 layout="@layout/card_clue" />
 
 

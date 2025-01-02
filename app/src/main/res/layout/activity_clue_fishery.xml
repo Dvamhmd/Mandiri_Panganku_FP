@@ -2,8 +2,6 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/clue_fishery">
 
     <ScrollView
@@ -37,7 +35,7 @@
                 android:layout_height="@dimen/_8sdp" />
 
             <include
-                android:id="@+id/gurameh"
+                android:id="@+id/gurame"
                 layout="@layout/card_clue" />
 
         </LinearLayout>

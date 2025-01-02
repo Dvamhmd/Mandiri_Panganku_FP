@@ -11,12 +11,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class ClueFisheryActivity : AppCompatActivity() {
+class ClueFarmingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_clue_fishery)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.clue_fishery)) { v, insets ->
+        setContentView(R.layout.activity_clue_farming)
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.clue_farming)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
@@ -55,30 +55,36 @@ class ClueFisheryActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val bawalView = findViewById<View>(R.id.bawal)
-        val bawalImage = bawalView.findViewById<ImageView>(R.id.card_image)
-        val bawalTitle = bawalView.findViewById<TextView>(R.id.card_title)
-        val bawalDescription = bawalView.findViewById<ImageView>(R.id.card_description)
-        bawalImage.setImageResource(R.drawable.bawal)
-        bawalTitle.text = getString(R.string.bawal)
-        bawalDescription.setImageResource(R.drawable.text_bawal)
+        val ayamView = findViewById<View>(R.id.ayam)
+        val ayamImage = ayamView.findViewById<ImageView>(R.id.card_image)
+        val ayamTitle = ayamView.findViewById<TextView>(R.id.card_title)
+        val ayamDescription = ayamView.findViewById<ImageView>(R.id.card_description)
+        ayamImage.setImageResource(R.drawable.ayam)
+        ayamTitle.text = getString(R.string.ayam)
+        ayamDescription.setImageResource(R.drawable.text_ayam)
 
+        val kambingView = findViewById<View>(R.id.kambing)
+        val kambingImage = kambingView.findViewById<ImageView>(R.id.card_image)
+        val kambingTitle = kambingView.findViewById<TextView>(R.id.card_title)
+        val kambingDescription = kambingView.findViewById<ImageView>(R.id.card_description)
+        kambingImage.setImageResource(R.drawable.kambing)
+        kambingTitle.text = getString(R.string.kambing)
+        kambingDescription.setImageResource(R.drawable.text_kambing)
 
-
-        val guramehView = findViewById<View>(R.id.gurame)
-        val guramehImage = guramehView.findViewById<ImageView>(R.id.card_image)
-        val guramehTitle = guramehView.findViewById<TextView>(R.id.card_title)
-        val guramehDescription = guramehView.findViewById<ImageView>(R.id.card_description)
-        guramehImage.setImageResource(R.drawable.gurame)
-        guramehTitle.text = getString(R.string.gurameh)
-        guramehDescription.setImageResource(R.drawable.text_gurameh)
+        val bebekView = findViewById<View>(R.id.bebek)
+        val bebekImage = bebekView.findViewById<ImageView>(R.id.card_image)
+        val bebekTitle = bebekView.findViewById<TextView>(R.id.card_title)
+        val bebekDescription = bebekView.findViewById<ImageView>(R.id.card_description)
+        bebekImage.setImageResource(R.drawable.bebek)
+        bebekTitle.text = getString(R.string.bebek)
+        bebekDescription.setImageResource(R.drawable.text_bebek)
 
 
 
         onBackPressedDispatcher.addCallback(
             this, object : OnBackPressedCallback(true){
                 override fun handleOnBackPressed() {
-                    val intent = Intent (this@ClueFisheryActivity, HomeActivity::class.java)
+                    val intent = Intent (this@ClueFarmingActivity, HomeActivity::class.java)
                     startActivity(intent)
                     finish()
                 }

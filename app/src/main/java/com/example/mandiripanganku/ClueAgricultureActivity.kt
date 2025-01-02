@@ -23,7 +23,7 @@ class ClueAgricultureActivity : AppCompatActivity() {
         }
 
         val topBarTitle = findViewById<TextView>(R.id.top_bar_title)
-        topBarTitle.text = getString(R.string.pertanianku)
+        topBarTitle.text = getString(R.string.panduan_perawatan)
 
         findViewById<ImageView>(R.id.back).setOnClickListener {
             val intent = Intent(this, HomeActivity::class.java)
@@ -55,10 +55,29 @@ class ClueAgricultureActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        findViewById<View>(R.id.add).setOnClickListener {
-            val intent = Intent(this, MyAgricultureActivity::class.java)
-            startActivity(intent)
-        }
+        val tomatView = findViewById<View>(R.id.tomat)
+        val tomatImage = tomatView.findViewById<ImageView>(R.id.card_image)
+        val tomatTitle = tomatView.findViewById<TextView>(R.id.card_title)
+        val tomatDescription = tomatView.findViewById<ImageView>(R.id.card_description)
+        tomatImage.setImageResource(R.drawable.tomat)
+        tomatTitle.text = getString(R.string.tomat)
+        tomatDescription.setImageResource(R.drawable.text_tomat)
+
+        val kentangView = findViewById<View>(R.id.kentang)
+        val kentangImage = kentangView.findViewById<ImageView>(R.id.card_image)
+        val kentangTitle = kentangView.findViewById<TextView>(R.id.card_title)
+        val kentangDescription = kentangView.findViewById<ImageView>(R.id.card_description)
+        kentangImage.setImageResource(R.drawable.kentang)
+        kentangTitle.text = getString(R.string.kentang)
+        kentangDescription.setImageResource(R.drawable.text_kentang)
+
+        val bayamView = findViewById<View>(R.id.bayam)
+        val bayamImage = bayamView.findViewById<ImageView>(R.id.card_image)
+        val bayamTitle = bayamView.findViewById<TextView>(R.id.card_title)
+        val bayamDescription = bayamView.findViewById<ImageView>(R.id.card_description)
+        bayamImage.setImageResource(R.drawable.bayam)
+        bayamTitle.text = getString(R.string.bayam)
+        bayamDescription.setImageResource(R.drawable.text_bayam)
 
         onBackPressedDispatcher.addCallback(
             this, object : OnBackPressedCallback(true){
