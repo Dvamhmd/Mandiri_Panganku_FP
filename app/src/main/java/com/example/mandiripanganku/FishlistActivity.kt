@@ -11,19 +11,19 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class FisheryActivity : AppCompatActivity() {
+class FishlistActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_fishery)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.fishery)) { v, insets ->
+        setContentView(R.layout.activity_fishlist)
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.fishlist)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
         val topBarTitle = findViewById<TextView>(R.id.top_bar_title)
-        topBarTitle.text = getString(R.string.fishery_title)
+        topBarTitle.text = getString(R.string.perikananku)
 
         findViewById<ImageView>(R.id.back).setOnClickListener {
             val intent = Intent(this, HomeActivity::class.java)
@@ -55,17 +55,15 @@ class FisheryActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        findViewById<ImageView>(R.id.my_food).setOnClickListener {
-            val intent = Intent(this, FishlistActivity::class.java)
+        findViewById<View>(R.id.add).setOnClickListener {
+            val intent = Intent(this, MyFisheryActivity::class.java)
             startActivity(intent)
         }
-
-
 
         onBackPressedDispatcher.addCallback(
             this, object : OnBackPressedCallback(true){
                 override fun handleOnBackPressed() {
-                    val intent = Intent (this@FisheryActivity, HomeActivity::class.java)
+                    val intent = Intent (this@FishlistActivity, HomeActivity::class.java)
                     startActivity(intent)
                     finish()
                 }

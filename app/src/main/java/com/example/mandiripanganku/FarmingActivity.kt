@@ -54,6 +54,13 @@ class FarmingActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        findViewById<ImageView>(R.id.my_food).setOnClickListener {
+            val intent = Intent(this, FarmlistActivity::class.java)
+            startActivity(intent)
+        }
+
+
+
         onBackPressedDispatcher.addCallback(
             this, object : OnBackPressedCallback(true){
                 override fun handleOnBackPressed() {

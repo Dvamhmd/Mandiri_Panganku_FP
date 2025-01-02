@@ -67,12 +67,40 @@
     <string name="masukkan_tanggal_tanam">Masukkan tanggal tanam</string>
     <string name="save">Simpan</string>
     <string name="photo">Lampiran Foto</string>
+    <string name="tambah_tanaman">Tambah Tanaman</string>
+    <string name="tanaman_anda">Tanaman Anda</string>
+    <string name="tambah_perikanan">Tambah Perikanan</string>
+    <string name="perikanan_anda">Perikanan Anda</string>
+    <string name="add">add</string>
+    <string name="tambah_peternakan">Tambah Peternakan</string>
+    <string name="peternakan_anda">Peternakan Anda</string>
+    <string name="pertanianku">Pertanianku</string>
+    <string name="perikananku">Perikananku</string>
+    <string name="jumlah_ternak">Jumlah ternak</string>
+    <string name="pilih_ternak_anda">Pilih ternak anda</string>
+    <string name="tanggal_mulai">Tanggal mulai</string>
+    <string name="pilih_ikan_anda">Pilih ikan anda</string>
+    <string name="peternakanku">Peternakanku</string>
 
-    <string-array name="dropdown_options">
+    <string-array name="dropdown_pertanian">
         <item>Kentang</item>
         <item>Bayam</item>
         <item>Jagung</item>
         <item>Tomat</item>
+    </string-array>
+
+    <string-array name="dropdown_peternakan">
+        <item>Ayam</item>
+        <item>Kambing</item>
+        <item>Bebek</item>
+        <item>Sapi</item>
+    </string-array>
+
+    <string-array name="dropdown_perikanan">
+        <item>Lele</item>
+        <item>Bawal</item>
+        <item>Nila</item>
+        <item>Gurameh</item>
     </string-array>
 
 </resources>

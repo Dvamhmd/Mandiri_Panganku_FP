@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.Spinner
 import android.widget.TextView
@@ -59,12 +60,17 @@ class MyAgricultureActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        findViewById<Button>(R.id.save).setOnClickListener {
+            val intent = Intent(this, AgrilistActivity::class.java)
+            startActivity(intent)
+        }
+
         val spinner: Spinner = findViewById(R.id.spinnerOptions)
 
 
         ArrayAdapter.createFromResource(
             this,
-            R.array.dropdown_options,
+            R.array.dropdown_pertanian,
             android.R.layout.simple_spinner_item
         ).also { adapter ->
 
@@ -83,19 +89,6 @@ class MyAgricultureActivity : AppCompatActivity() {
 
             }
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         onBackPressedDispatcher.addCallback(
             this, object : OnBackPressedCallback(true){

@@ -55,8 +55,7 @@ class AgricultureActivity : AppCompatActivity() {
         }
 
         findViewById<ImageView>(R.id.my_food).setOnClickListener {
-            val intent = Intent(this, MyAgricultureActivity::class.java)
-            intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
+            val intent = Intent(this, AgrilistActivity::class.java)
             startActivity(intent)
         }
 

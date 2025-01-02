@@ -34,7 +34,15 @@
         <activity android:name=".AgricultureActivity" />
         <activity android:name=".FarmingActivity" />
         <activity android:name=".FisheryActivity" />
+
         <activity android:name=".MyAgricultureActivity" />
+        <activity android:name=".MyFarmingActivity" />
+        <activity android:name=".MyFisheryActivity" />
+
+        <activity android:name=".AgrilistActivity" />
+        <activity android:name=".FarmlistActivity" />
+        <activity android:name=".FishlistActivity" />
+
 
 
     </application>
