@@ -11,19 +11,19 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class FisheryActivity : AppCompatActivity() {
+class ClueFisheryActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_fishery)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.fishery)) { v, insets ->
+        setContentView(R.layout.activity_clue_fishery)
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.clue_fishery)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
         val topBarTitle = findViewById<TextView>(R.id.top_bar_title)
-        topBarTitle.text = getString(R.string.fishery_title)
+        topBarTitle.text = getString(R.string.panduan_perawatan)
 
         findViewById<ImageView>(R.id.back).setOnClickListener {
             val intent = Intent(this, HomeActivity::class.java)
@@ -55,22 +55,30 @@ class FisheryActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        findViewById<ImageView>(R.id.my_food).setOnClickListener {
-            val intent = Intent(this, FishlistActivity::class.java)
-            startActivity(intent)
-        }
+        val bawalView = findViewById<View>(R.id.bawal)
+        val bawalImage = bawalView.findViewById<ImageView>(R.id.card_image)
+        val bawalTitle = bawalView.findViewById<TextView>(R.id.card_title)
+        val bawalDescription = bawalView.findViewById<ImageView>(R.id.card_description)
+        bawalImage.setImageResource(R.drawable.bawal)
+        bawalTitle.text = getString(R.string.bawal)
+        bawalDescription.setImageResource(R.drawable.text_bawal)
 
-        findViewById<ImageView>(R.id.my_clue).setOnClickListener {
-            val intent = Intent(this, ClueFisheryActivity::class.java)
-            startActivity(intent)
-        }
+
+
+        val guramehView = findViewById<View>(R.id.gurameh)
+        val guramehImage = guramehView.findViewById<ImageView>(R.id.card_image)
+        val guramehTitle = guramehView.findViewById<TextView>(R.id.card_title)
+        val guramehDescription = guramehView.findViewById<ImageView>(R.id.card_description)
+        guramehImage.setImageResource(R.drawable.gurame)
+        guramehTitle.text = getString(R.string.gurameh)
+        guramehDescription.setImageResource(R.drawable.text_gurameh)
 
 
 
         onBackPressedDispatcher.addCallback(
             this, object : OnBackPressedCallback(true){
                 override fun handleOnBackPressed() {
-                    val intent = Intent (this@FisheryActivity, HomeActivity::class.java)
+                    val intent = Intent (this@ClueFisheryActivity, HomeActivity::class.java)
                     startActivity(intent)
                     finish()
                 }

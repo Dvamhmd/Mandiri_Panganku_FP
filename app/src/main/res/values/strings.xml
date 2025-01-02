@@ -81,6 +81,11 @@
     <string name="tanggal_mulai">Tanggal mulai</string>
     <string name="pilih_ikan_anda">Pilih ikan anda</string>
     <string name="peternakanku">Peternakanku</string>
+    <string name="lele">LELE</string>
+    <string name="description">description</string>
+    <string name="panduan_perawatan">Panduan Perawatan</string>
+    <string name="bawal">BAWAL</string>
+    <string name="gurameh">GURAMEH</string>
 
     <string-array name="dropdown_pertanian">
         <item>Kentang</item>
