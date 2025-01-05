@@ -47,9 +47,9 @@
         <activity android:name=".ClueFisheryActivity" />
         <activity android:name=".ClueFarmingActivity" />
 
-        <activity android:name=".SpinachActivity" />
-        <activity android:name=".TomatoActivity" />
-        <activity android:name=".PotatoActivity" />
+        <activity android:name=".PanduanTomat" />
+        <activity android:name=".PanduanKentang" />
+        <activity android:name=".PanduanBayam" />
 
 
 

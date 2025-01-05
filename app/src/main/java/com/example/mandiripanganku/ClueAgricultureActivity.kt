@@ -66,7 +66,7 @@ class ClueAgricultureActivity : AppCompatActivity() {
         tomatDescription.setImageResource(R.drawable.text_tomat)
 
         val kentangView = findViewById<View>(R.id.kentang)
-
+        val kentangClick = kentangView.findViewById<CardView>(R.id.card_click)
         val kentangImage = kentangView.findViewById<ImageView>(R.id.card_image)
         val kentangTitle = kentangView.findViewById<TextView>(R.id.card_title)
         val kentangDescription = kentangView.findViewById<ImageView>(R.id.card_description)
@@ -77,13 +77,27 @@ class ClueAgricultureActivity : AppCompatActivity() {
         val bayamView = findViewById<View>(R.id.bayam)
 
         val bayamImage = bayamView.findViewById<ImageView>(R.id.card_image)
+        val bayamClick = bayamView.findViewById<CardView>(R.id.card_click)
         val bayamTitle = bayamView.findViewById<TextView>(R.id.card_title)
         val bayamDescription = bayamView.findViewById<ImageView>(R.id.card_description)
         bayamImage.setImageResource(R.drawable.bayam)
         bayamTitle.text = getString(R.string.bayam)
         bayamDescription.setImageResource(R.drawable.text_bayam)
 
+        tomatClick.setOnClickListener {
+            val intent = Intent(this, PanduanTomat::class.java)
+            startActivity(intent)
+        }
 
+        kentangClick.setOnClickListener {
+            val intent = Intent(this, PanduanKentang::class.java)
+            startActivity(intent)
+        }
+
+       bayamClick.setOnClickListener {
+            val intent = Intent(this, PanduanBayam::class.java)
+            startActivity(intent)
+        }
 
 
 

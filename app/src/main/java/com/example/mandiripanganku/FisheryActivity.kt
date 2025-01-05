@@ -64,6 +64,11 @@ class FisheryActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        findViewById<ImageView>(R.id.my_report).setOnClickListener {
+            val intent = Intent(this, ReportActivity::class.java)
+            startActivity(intent)
+        }
+
 
 
         onBackPressedDispatcher.addCallback(

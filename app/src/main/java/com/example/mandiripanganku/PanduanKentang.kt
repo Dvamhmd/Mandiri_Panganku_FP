@@ -10,23 +10,22 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class AgricultureActivity : AppCompatActivity() {
+class PanduanKentang : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_agriculture)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.agriculture)) { v, insets ->
+        setContentView(R.layout.panduan_kentang)
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.panduan_kentang)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
         val topBarTitle = findViewById<TextView>(R.id.top_bar_title)
-        topBarTitle.text = getString(R.string.agriculture_title)
+        topBarTitle.text = getString(R.string.panduan_perawatan_kentang)
 
         findViewById<ImageView>(R.id.back).setOnClickListener {
-            val intent = Intent(this, HomeActivity::class.java)
-            intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
+            val intent = Intent(this, ClueAgricultureActivity::class.java)
             startActivity(intent)
         }
 
@@ -54,25 +53,17 @@ class AgricultureActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        findViewById<ImageView>(R.id.my_food).setOnClickListener {
-            val intent = Intent(this, AgrilistActivity::class.java)
-            startActivity(intent)
-        }
 
-        findViewById<ImageView>(R.id.my_clue).setOnClickListener {
-            val intent = Intent(this, ClueAgricultureActivity::class.java)
-            startActivity(intent)
-        }
 
-        findViewById<ImageView>(R.id.my_report).setOnClickListener {
-            val intent = Intent(this, ReportActivity::class.java)
-            startActivity(intent)
-        }
+
+
+
+
 
         onBackPressedDispatcher.addCallback(
             this, object : OnBackPressedCallback(true){
                 override fun handleOnBackPressed() {
-                    val intent = Intent(this@AgricultureActivity, HomeActivity::class.java)
+                    val intent = Intent (this@PanduanKentang, ClueAgricultureActivity::class.java)
                     startActivity(intent)
                     finish()
                 }
@@ -82,5 +73,4 @@ class AgricultureActivity : AppCompatActivity() {
 
 
     }
-
 }
