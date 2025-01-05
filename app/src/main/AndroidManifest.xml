@@ -47,6 +47,10 @@
         <activity android:name=".ClueFisheryActivity" />
         <activity android:name=".ClueFarmingActivity" />
 
+        <activity android:name=".SpinachActivity" />
+        <activity android:name=".TomatoActivity" />
+        <activity android:name=".PotatoActivity" />
+
 
 
     </application>

@@ -10,6 +10,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/card_click"
         android:layout_width="@dimen/_280sdp"
         android:layout_height="@dimen/_140sdp"
         app:cardBackgroundColor="@color/orange"

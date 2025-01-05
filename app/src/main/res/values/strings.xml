@@ -94,6 +94,9 @@
     <string name="ayam">AYAM</string>
     <string name="kambing">KAMBING</string>
     <string name="bebek">BEBEK</string>
+    <string name="panduan_perawatan_bayam">Panduan Perawatan Bayam</string>
+    <string name="panduan_perawatan_tomat">Panduan Perawatan Tomat</string>
+    <string name="panduan_perawatan_kentang">Panduan Perawatan Kentang</string>
 
     <string-array name="dropdown_pertanian">
         <item>Kentang</item>

@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.activity.OnBackPressedCallback
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.cardview.widget.CardView
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
@@ -56,6 +57,7 @@ class ClueAgricultureActivity : AppCompatActivity() {
         }
 
         val tomatView = findViewById<View>(R.id.tomat)
+        val tomatClick = tomatView.findViewById<CardView>(R.id.card_click)
         val tomatImage = tomatView.findViewById<ImageView>(R.id.card_image)
         val tomatTitle = tomatView.findViewById<TextView>(R.id.card_title)
         val tomatDescription = tomatView.findViewById<ImageView>(R.id.card_description)
@@ -64,6 +66,7 @@ class ClueAgricultureActivity : AppCompatActivity() {
         tomatDescription.setImageResource(R.drawable.text_tomat)
 
         val kentangView = findViewById<View>(R.id.kentang)
+
         val kentangImage = kentangView.findViewById<ImageView>(R.id.card_image)
         val kentangTitle = kentangView.findViewById<TextView>(R.id.card_title)
         val kentangDescription = kentangView.findViewById<ImageView>(R.id.card_description)
@@ -72,12 +75,17 @@ class ClueAgricultureActivity : AppCompatActivity() {
         kentangDescription.setImageResource(R.drawable.text_kentang)
 
         val bayamView = findViewById<View>(R.id.bayam)
+
         val bayamImage = bayamView.findViewById<ImageView>(R.id.card_image)
         val bayamTitle = bayamView.findViewById<TextView>(R.id.card_title)
         val bayamDescription = bayamView.findViewById<ImageView>(R.id.card_description)
         bayamImage.setImageResource(R.drawable.bayam)
         bayamTitle.text = getString(R.string.bayam)
         bayamDescription.setImageResource(R.drawable.text_bayam)
+
+
+
+
 
         onBackPressedDispatcher.addCallback(
             this, object : OnBackPressedCallback(true){
