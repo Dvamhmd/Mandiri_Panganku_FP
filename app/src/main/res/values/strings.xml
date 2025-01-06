@@ -94,9 +94,18 @@
     <string name="ayam">AYAM</string>
     <string name="kambing">KAMBING</string>
     <string name="bebek">BEBEK</string>
+
     <string name="panduan_perawatan_bayam">Perawatan Bayam</string>
     <string name="panduan_perawatan_tomat">Perawatan Tomat</string>
     <string name="panduan_perawatan_kentang">Perawatan Kentang</string>
+
+    <string name="panduan_perawatan_lele">Perawatan Lele</string>
+    <string name="panduan_perawatan_bawal">Perawatan Bawal</string>
+    <string name="panduan_perawatan_gurame">Perawatan Gurame</string>
+
+    <string name="panduan_perawatan_ayam">Perawatan Ayam</string>
+    <string name="panduan_perawatan_bebek">Perawatan Bebek</string>
+    <string name="panduan_perawatan_kambing">Perawatan Kambing</string>
 
     <string-array name="dropdown_pertanian">
         <item>Kentang</item>

@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.activity.OnBackPressedCallback
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.cardview.widget.CardView
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
@@ -56,6 +57,7 @@ class ClueFarmingActivity : AppCompatActivity() {
         }
 
         val ayamView = findViewById<View>(R.id.ayam)
+        val ayamClick = ayamView.findViewById<CardView>(R.id.card_click)
         val ayamImage = ayamView.findViewById<ImageView>(R.id.card_image)
         val ayamTitle = ayamView.findViewById<TextView>(R.id.card_title)
         val ayamDescription = ayamView.findViewById<ImageView>(R.id.card_description)
@@ -64,6 +66,7 @@ class ClueFarmingActivity : AppCompatActivity() {
         ayamDescription.setImageResource(R.drawable.text_ayam)
 
         val kambingView = findViewById<View>(R.id.kambing)
+        val kambingClick = kambingView.findViewById<CardView>(R.id.card_click)
         val kambingImage = kambingView.findViewById<ImageView>(R.id.card_image)
         val kambingTitle = kambingView.findViewById<TextView>(R.id.card_title)
         val kambingDescription = kambingView.findViewById<ImageView>(R.id.card_description)
@@ -72,12 +75,28 @@ class ClueFarmingActivity : AppCompatActivity() {
         kambingDescription.setImageResource(R.drawable.text_kambing)
 
         val bebekView = findViewById<View>(R.id.bebek)
+        val bebekClick = bebekView.findViewById<CardView>(R.id.card_click)
         val bebekImage = bebekView.findViewById<ImageView>(R.id.card_image)
         val bebekTitle = bebekView.findViewById<TextView>(R.id.card_title)
         val bebekDescription = bebekView.findViewById<ImageView>(R.id.card_description)
         bebekImage.setImageResource(R.drawable.bebek)
         bebekTitle.text = getString(R.string.bebek)
         bebekDescription.setImageResource(R.drawable.text_bebek)
+
+        ayamClick.setOnClickListener {
+            val intent = Intent(this, PanduanAyam::class.java)
+            startActivity(intent)
+        }
+
+        kambingClick.setOnClickListener {
+            val intent = Intent(this, PanduanKambing::class.java)
+            startActivity(intent)
+        }
+
+        bebekClick.setOnClickListener {
+            val intent = Intent(this, PanduanBebek::class.java)
+            startActivity(intent)
+        }
 
 
 

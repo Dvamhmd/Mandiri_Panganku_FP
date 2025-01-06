@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.activity.OnBackPressedCallback
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.cardview.widget.CardView
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
@@ -55,7 +56,17 @@ class ClueFisheryActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val leleView = findViewById<View>(R.id.lele)
+        val leleClick = leleView.findViewById<CardView>(R.id.card_click)
+        val leleImage = leleView.findViewById<ImageView>(R.id.card_image)
+        val leleTitle = leleView.findViewById<TextView>(R.id.card_title)
+        val leleDescription = leleView.findViewById<ImageView>(R.id.card_description)
+        leleImage.setImageResource(R.drawable.lele)
+        leleTitle.text = getString(R.string.lele)
+        leleDescription.setImageResource(R.drawable.text_lele)
+
         val bawalView = findViewById<View>(R.id.bawal)
+        val bawalClick = bawalView.findViewById<CardView>(R.id.card_click)
         val bawalImage = bawalView.findViewById<ImageView>(R.id.card_image)
         val bawalTitle = bawalView.findViewById<TextView>(R.id.card_title)
         val bawalDescription = bawalView.findViewById<ImageView>(R.id.card_description)
@@ -63,15 +74,29 @@ class ClueFisheryActivity : AppCompatActivity() {
         bawalTitle.text = getString(R.string.bawal)
         bawalDescription.setImageResource(R.drawable.text_bawal)
 
-
-
         val guramehView = findViewById<View>(R.id.gurame)
+        val guramehClick = guramehView.findViewById<CardView>(R.id.card_click)
         val guramehImage = guramehView.findViewById<ImageView>(R.id.card_image)
         val guramehTitle = guramehView.findViewById<TextView>(R.id.card_title)
         val guramehDescription = guramehView.findViewById<ImageView>(R.id.card_description)
         guramehImage.setImageResource(R.drawable.gurame)
         guramehTitle.text = getString(R.string.gurameh)
         guramehDescription.setImageResource(R.drawable.text_gurameh)
+
+        leleClick.setOnClickListener {
+            val intent = Intent(this, PanduanLele::class.java)
+            startActivity(intent)
+        }
+
+        bawalClick.setOnClickListener {
+            val intent = Intent(this, PanduanBawal::class.java)
+            startActivity(intent)
+        }
+
+        guramehClick.setOnClickListener {
+            val intent = Intent(this, PanduanGurame::class.java)
+            startActivity(intent)
+        }
 
 
 

@@ -51,6 +51,14 @@
         <activity android:name=".PanduanKentang" />
         <activity android:name=".PanduanBayam" />
 
+        <activity android:name=".PanduanLele" />
+        <activity android:name=".PanduanBawal" />
+        <activity android:name=".PanduanGurame" />
+
+        <activity android:name=".PanduanAyam" />
+        <activity android:name=".PanduanBebek" />
+        <activity android:name=".PanduanKambing" />
+
 
 
     </application>
