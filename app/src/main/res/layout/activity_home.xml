@@ -47,6 +47,7 @@
                         android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/head_of_family"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/kk_zinan_kats"
@@ -93,7 +94,7 @@
                     tools:ignore="RtlSymmetry" />
 
                 <EditText
-                    android:id="@+id/number"
+                    android:id="@+id/search"
                     android:layout_width="@dimen/_230sdp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -103,7 +104,7 @@
                     android:drawableEnd="@drawable/search"
                     android:elevation="@dimen/_5sdp"
                     android:hint="@string/search"
-                    android:inputType="number"
+                    android:inputType="text"
                     android:paddingStart="@dimen/_15sdp"
                     android:paddingTop="@dimen/_8sdp"
                     android:paddingBottom="@dimen/_8sdp"

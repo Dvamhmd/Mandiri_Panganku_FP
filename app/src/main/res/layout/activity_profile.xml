@@ -93,6 +93,7 @@
                             android:textSize="@dimen/_16ssp" />
 
                         <TextView
+                            android:id="@+id/head_of_family"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
@@ -149,6 +150,7 @@
                             android:textSize="@dimen/_16ssp" />
 
                         <TextView
+                            android:id="@+id/member_count"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
@@ -205,6 +207,7 @@
                             android:textSize="@dimen/_16ssp" />
 
                         <TextView
+                            android:id="@+id/phone_number"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"

@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.google.gms.google.services)
 }
 
 android {
@@ -42,11 +43,19 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.firebase.database)
+    implementation(libs.firebase.firestore.ktx)
+    implementation(libs.firebase.firestore)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation(libs.ssp.android)
     implementation(libs.sdp.android)
+    implementation(libs.retrofit.android)
+    implementation(libs.converter.gson)
+    implementation(libs.converter.scalars)
+    implementation(libs.androidx.viewmodel)
+    implementation(libs.androidx.runtime)
 
 
 }
