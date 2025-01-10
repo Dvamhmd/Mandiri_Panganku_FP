@@ -39,7 +39,6 @@ class FamilyViewModel(
 
 
 
-    private val _familyData = MutableLiveData<Family?>()
 
     fun getFamily(family: Family) {
         viewModelScope.launch {

@@ -6,8 +6,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.mandiripanganku.data.repository.FamilyRepository
 
 class FamilyViewModelFactory(
-    private val familyRepository: FamilyRepository,
-    private val context: Context
+    private val familyRepository: FamilyRepository
 ) : ViewModelProvider.Factory {
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         if (modelClass.isAssignableFrom(FamilyViewModel::class.java)) {
