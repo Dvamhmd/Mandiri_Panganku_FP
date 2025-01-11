@@ -49,7 +49,7 @@ class PasswordActivity : AppCompatActivity() {
         val familyRepository = FamilyRepository()
 
         // Inisialisasi ViewModel
-        familyViewModel = ViewModelProvider(this, FamilyViewModelFactory(familyRepository, this))[FamilyViewModel::class.java]
+        familyViewModel = ViewModelProvider(this, FamilyViewModelFactory(familyRepository))[FamilyViewModel::class.java]
 
 
         val passwordEditText = findViewById<EditText>(R.id.password_input)

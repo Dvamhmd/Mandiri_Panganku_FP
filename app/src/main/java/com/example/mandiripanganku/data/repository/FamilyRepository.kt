@@ -3,18 +3,18 @@ package com.example.mandiripanganku.data.repository
 import android.util.Log
 import com.example.mandiripanganku.data.models.Family
 import com.example.mandiripanganku.data.models.Result
-import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.coroutines.tasks.await
 
 class FamilyRepository {
-    private val database = FirebaseDatabase.getInstance().getReference("Table_Family")
+    private val database = FirebaseFirestore.getInstance().collection("table_family")
 
     suspend fun addFamily(family: Family): Result {
         try {
             Log.d("FamilyRepository", "Checking if KK number exists: ${family.kkNumber}")
 
             // Memeriksa apakah data dengan kk_number sudah ada
-            val snapshot = database.child(family.kkNumber!!).get().await()
+            val snapshot = database.document(family.kkNumber!!).get().await()
             if (snapshot.exists()) {
 
                 Log.d("FamilyRepository", "KK number already exists: ${family.kkNumber}")
@@ -24,7 +24,7 @@ class FamilyRepository {
             } else {
                 // Menyimpan data keluarga ke Realtime Database dengan kk_number sebagai kunci
                 Log.d("FamilyRepository", "Adding new family with KK number: ${family.kkNumber}")
-                database.child(family.kkNumber).setValue(family).await()
+                database.document(family.kkNumber).set(family).await()
                 Log.i("FamilyRepository", "Family added successfully: ${family.kkNumber}")
                 return Result.Success("Registrasi Berhasil") // Mengembalikan objek Family yang baru ditambahkan
             }
@@ -40,12 +40,12 @@ class FamilyRepository {
             Log.d("FamilyRepository", "Checking if KK number exists: ${family.kkNumber}")
 
             // Memeriksa apakah data dengan kk_number sudah ada
-            val snapshot = database.child(family.kkNumber!!).get().await()
+            val snapshot = database.document(family.kkNumber!!).get().await()
 
             if (snapshot.exists()) {
 
                 Log.d("FamilyRepository", "KK number already exists: ${family.kkNumber}")
-                val familyData = snapshot.getValue(Family::class.java)
+                val familyData = snapshot.toObject(Family::class.java)
                 Result.AlreadyExists("repositori: Data keluarga dengan Nomor KK ${family.kkNumber} sudah ada dan password sudah diatur.", familyData)
 
             } else {

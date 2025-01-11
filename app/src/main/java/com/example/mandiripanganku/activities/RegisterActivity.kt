@@ -38,7 +38,7 @@ class RegisterActivity : AppCompatActivity() {
         val familyRepository = FamilyRepository()
 
         // Inisialisasi ViewModel
-        familyViewModel = ViewModelProvider(this, FamilyViewModelFactory(familyRepository, this))[FamilyViewModel::class.java]
+        familyViewModel = ViewModelProvider(this, FamilyViewModelFactory(familyRepository))[FamilyViewModel::class.java]
 
         // Ambil referensi ke EditText dan Button
         val kkNumberEditText = findViewById<EditText>(R.id.number)
