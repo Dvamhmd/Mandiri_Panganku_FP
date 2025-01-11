@@ -1,10 +1,10 @@
-package com.example.mandiripanganku.viewmodel
+package com.example.mandiripanganku.viewmodels
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.mandiripanganku.data.models.Family
 import com.example.mandiripanganku.data.models.Result
-import com.example.mandiripanganku.data.repository.FamilyRepository
+import com.example.mandiripanganku.data.repositories.FamilyRepository
 import kotlinx.coroutines.launch
 import androidx.lifecycle.MutableLiveData
 import com.example.mandiripanganku.data.models.FamilySession
@@ -35,10 +35,6 @@ class FamilyViewModel(
             }
         }
     }
-
-
-
-
 
     fun getFamily(family: Family) {
         viewModelScope.launch {

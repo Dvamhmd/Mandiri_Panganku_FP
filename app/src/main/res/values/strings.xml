@@ -57,7 +57,7 @@
     <string name="report_title">Laporan Terpadu</string>
     <string name="write_something">Tulis Sesuatu</string>
     <string name="fishery_title">Perikanan</string>
-    <string name="farming_title">Peternakan</string>
+    <string name="livestock_project">Peternakan</string>
     <string name="my_agriculture">Tanaman Panganku</string>
     <string name="choose_your_plant">Pilih tanaman anda</string>
     <string name="jumlah_tanaman">Jumlah tanaman</string>
@@ -106,6 +106,7 @@
     <string name="panduan_perawatan_ayam">Perawatan Ayam</string>
     <string name="panduan_perawatan_bebek">Perawatan Bebek</string>
     <string name="panduan_perawatan_kambing">Perawatan Kambing</string>
+    <string name="keluarga_tidak_ditemukan">Keluarga tidak ditemukan</string>
 
     <string-array name="dropdown_pertanian">
         <item>Kentang</item>

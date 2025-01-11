@@ -1,9 +1,8 @@
-package com.example.mandiripanganku.viewmodel
+package com.example.mandiripanganku.viewmodels
 
-import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.mandiripanganku.data.repository.FamilyRepository
+import com.example.mandiripanganku.data.repositories.FamilyRepository
 
 class FamilyViewModelFactory(
     private val familyRepository: FamilyRepository

@@ -16,9 +16,9 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.mandiripanganku.R
 import com.example.mandiripanganku.data.models.Family
 import com.example.mandiripanganku.data.models.FamilySession
-import com.example.mandiripanganku.data.repository.FamilyRepository
-import com.example.mandiripanganku.viewmodel.FamilyViewModel
-import com.example.mandiripanganku.viewmodel.FamilyViewModelFactory
+import com.example.mandiripanganku.data.repositories.FamilyRepository
+import com.example.mandiripanganku.viewmodels.FamilyViewModel
+import com.example.mandiripanganku.viewmodels.FamilyViewModelFactory
 
 class PasswordActivity : AppCompatActivity() {
 

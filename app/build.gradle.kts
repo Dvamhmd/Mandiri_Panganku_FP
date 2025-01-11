@@ -11,6 +11,7 @@ android {
     defaultConfig {
         applicationId = "com.example.mandiripanganku"
         minSdk = 24
+        //noinspection OldTargetApi
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -46,6 +47,7 @@ dependencies {
     implementation(libs.firebase.database)
     implementation(libs.firebase.firestore.ktx)
     implementation(libs.firebase.firestore)
+    implementation(libs.firebase.storage)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

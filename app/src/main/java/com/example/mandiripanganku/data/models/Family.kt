@@ -1,18 +1,13 @@
 package com.example.mandiripanganku.data.models
 
-import com.google.gson.annotations.SerializedName
-
 // Data class untuk respons setelah menambahkan keluarga
 data class Family(
-    @SerializedName("kk_number") val kkNumber: String? = null,
-    @SerializedName("head_of_family") val headOfFamily: String? = null,
-    @SerializedName("member_count") val memberCount: Int? = null,
-    @SerializedName("phone_number") val phoneNumber: String? = null,
-    @SerializedName("email") val email: String? = null,
-    @SerializedName("password") val password: String? = null
+    val kkNumber: String? = null,
+    val headOfFamily: String? = null,
+    val memberCount: Int? = null,
+    val phoneNumber: String? = null,
+    val email: String? = null,
+    val password: String? = null,
+    val createdAt: Any? = null, // Menyimpan waktu pembuatan
+    val updatedAt: Any? = null   // Menyimpan waktu pembaruan
 )
-
-object FamilySession{
-    var family: Family? = null
-    var isLoggedIn: Boolean = false
-}

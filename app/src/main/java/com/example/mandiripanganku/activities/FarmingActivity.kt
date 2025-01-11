@@ -23,7 +23,7 @@ class FarmingActivity : AppCompatActivity() {
         }
 
         val topBarTitle = findViewById<TextView>(R.id.top_bar_title)
-        topBarTitle.text = getString(R.string.farming_title)
+        topBarTitle.text = getString(R.string.livestock_project)
 
         findViewById<ImageView>(R.id.back).setOnClickListener {
             val intent = Intent(this, HomeActivity::class.java)
