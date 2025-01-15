@@ -42,4 +42,22 @@ class LivestockProjectRepository {
                 onFailure(e)
             }
     }
+
+    fun getLivestockProjects(kkNumber: String, onSuccess: (List<LivestockProject>) -> Unit, onFailure: (Exception) -> Unit) {
+        db.whereEqualTo("kkNumber", kkNumber) // Filter berdasarkan kknomor
+            .get()
+            .addOnSuccessListener { documents ->
+                val livestockProjects = mutableListOf<LivestockProject>()
+                for (document in documents) {
+                    val livestockProject = document.toObject(LivestockProject::class.java)
+                    livestockProjects.add(livestockProject)
+                }
+                onSuccess(livestockProjects)
+            }
+            .addOnFailureListener { e ->
+                Log.e("Firestore", "Error getting livestock projects: $e")
+                onFailure(e)
+            }
+    }
 }
+

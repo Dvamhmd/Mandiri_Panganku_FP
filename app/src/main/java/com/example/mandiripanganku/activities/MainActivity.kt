@@ -6,6 +6,10 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.mandiripanganku.R
 import com.example.mandiripanganku.data.models.Family
 import com.example.mandiripanganku.data.models.FamilySession
+import com.google.firebase.Firebase
+import com.google.firebase.appcheck.appCheck
+import com.google.firebase.appcheck.debug.DebugAppCheckProviderFactory
+import com.google.firebase.initialize
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,6 +18,10 @@ class MainActivity : AppCompatActivity() {
 
         val sharedPreferences = getSharedPreferences("FamilySession", MODE_PRIVATE)
         val isLoggedIn = sharedPreferences.getBoolean("IS_LOGGED_IN", false)
+        Firebase.initialize(context = this)
+        Firebase.appCheck.installAppCheckProviderFactory(
+            DebugAppCheckProviderFactory.getInstance(),
+        )
 
         if (isLoggedIn) {
             // Muat data ke FamilySession

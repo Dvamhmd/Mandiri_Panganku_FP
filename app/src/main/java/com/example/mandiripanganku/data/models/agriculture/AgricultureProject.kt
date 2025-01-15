@@ -4,7 +4,7 @@ data class AgricultureProject(
     val agricultureId: String = "",
     val kkNumber: String = "",
     val plantName: String = "",
-    val plantPhoto: String = "",
+    var plantPhoto: String = "",
     val quantity: Int = 0,
     val plantingDate: String = "",
     val createdAt: Any? = null, // Use Any? to allow for server timestamp

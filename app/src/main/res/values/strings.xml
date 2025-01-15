@@ -66,7 +66,7 @@
     <string name="tanggal_tanam">Tanggal tanam</string>
     <string name="masukkan_tanggal_tanam">Masukkan tanggal tanam</string>
     <string name="save">Simpan</string>
-    <string name="photo">Lampiran Foto</string>
+    <string name="photo">Lampiran Foto (opsional)</string>
     <string name="tambah_tanaman">Tambah Tanaman</string>
     <string name="tanaman_anda">Tanaman Anda</string>
     <string name="tambah_perikanan">Tambah Perikanan</string>
@@ -107,6 +107,8 @@
     <string name="panduan_perawatan_bebek">Perawatan Bebek</string>
     <string name="panduan_perawatan_kambing">Perawatan Kambing</string>
     <string name="keluarga_tidak_ditemukan">Keluarga tidak ditemukan</string>
+    <string name="pilih_foto">Pilih Foto</string>
+    <string name="foto_ternak_txt">foto ternak</string>
 
     <string-array name="dropdown_pertanian">
         <item>Kentang</item>

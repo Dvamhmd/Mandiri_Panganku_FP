@@ -58,6 +58,10 @@ dependencies {
     implementation(libs.converter.scalars)
     implementation(libs.androidx.viewmodel)
     implementation(libs.androidx.runtime)
+    //noinspection UseTomlInstead
+    implementation(platform("com.google.firebase:firebase-bom:33.7.0"))
+    //noinspection UseTomlInstead
+    implementation("com.google.firebase:firebase-appcheck-debug")
 
-
+    implementation(libs.coil)
 }
