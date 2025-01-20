@@ -57,7 +57,7 @@
     <string name="report_title">Laporan Terpadu</string>
     <string name="write_something">Tulis Sesuatu</string>
     <string name="fishery_title">Perikanan</string>
-    <string name="farming_title">Peternakan</string>
+    <string name="livestock_project">Peternakan</string>
     <string name="my_agriculture">Tanaman Panganku</string>
     <string name="choose_your_plant">Pilih tanaman anda</string>
     <string name="jumlah_tanaman">Jumlah tanaman</string>
@@ -66,7 +66,7 @@
     <string name="tanggal_tanam">Tanggal tanam</string>
     <string name="masukkan_tanggal_tanam">Masukkan tanggal tanam</string>
     <string name="save">Simpan</string>
-    <string name="photo">Lampiran Foto</string>
+    <string name="photo">Lampiran Foto (opsional)</string>
     <string name="tambah_tanaman">Tambah Tanaman</string>
     <string name="tanaman_anda">Tanaman Anda</string>
     <string name="tambah_perikanan">Tambah Perikanan</string>
@@ -106,6 +106,17 @@
     <string name="panduan_perawatan_ayam">Perawatan Ayam</string>
     <string name="panduan_perawatan_bebek">Perawatan Bebek</string>
     <string name="panduan_perawatan_kambing">Perawatan Kambing</string>
+    <string name="keluarga_tidak_ditemukan">Keluarga tidak ditemukan</string>
+    <string name="pilih_foto">Pilih Foto</string>
+    <string name="foto_ternak_txt">foto ternak</string>
+    <string name="nama_ternak">Nama Ternak</string>
+    <string name="nama_tanaman">Nama Tanaman</string>
+    <string name="nama_ikan">Nama Ikan</string>
+    <string name="masukkan_jumlah_ternak">Masukkan jumlah ternak</string>
+    <string name="masukkan_tanggal_mulai">Masukkan tanggal mulai</string>
+    <string name="masukkan_jumlah_bibit">Masukkan jumlah bibit</string>
+    <string name="delete">Hapus</string>
+    <string name="masukkan_jumlah_tanaman">Masukkan jumlah tanaman</string>
 
     <string-array name="dropdown_pertanian">
         <item>Kentang</item>

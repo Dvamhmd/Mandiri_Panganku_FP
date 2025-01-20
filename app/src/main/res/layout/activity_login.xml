@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:id="@+id/main">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_bg"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/_280sdp"
+                android:layout_height="@dimen/_150sdp"
+                android:contentDescription="@string/image"
+                android:src="@drawable/picture_one"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/welcome"
+                android:textAlignment="center"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold"
+                android:fontFamily="@font/abhaya_extra"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/accept"
+                android:textAlignment="center"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:text="@string/policy"
+                android:textAlignment="center"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_12ssp"
+                tools:ignore="TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/number"
+                android:layout_width="@dimen/_240sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:background="@color/white"
+                android:drawableEnd="@drawable/family"
+                android:hint="@string/number"
+                android:inputType="number"
+                android:padding="@dimen/_8sdp"
+                tools:ignore="Autofill,TextContrastCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="@dimen/_240sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:drawableEnd="@drawable/lock"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:padding="@dimen/_8sdp"
+                tools:ignore="Autofill,TextContrastCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/forget"
+                android:textColor="#3E6D41"
+                android:textSize="@dimen/_15ssp"
+                android:fontFamily="@font/abhaya_medium"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/_68sdp"
+                tools:ignore="RtlSymmetry,TextSizeCheck" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp" />
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_12sdp"
+                android:backgroundTint="@color/orange"
+                android:text="@string/login"
+                android:textSize="@dimen/_18ssp"
+                android:fontFamily="@font/abhaya_semi"
+                tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:text="@string/dont_have_account"
+                android:fontFamily="@font/abhaya_semi"
+                android:textAlignment="center"
+                android:textColor="@color/text"
+                android:textSize="@dimen/_15ssp" />
+
+            <Button
+                android:id="@+id/signup"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:backgroundTint="@color/white"
+                android:text="@string/sign_up"
+                android:fontFamily="@font/abhaya_semi"
+                android:textColor="@color/text"
+                android:textSize="@dimen/_18ssp"
+                tools:ignore="TextContrastCheck,TouchTargetSizeCheck,VisualLintButtonSize" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- ProgressBar di lapisan paling depan -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</FrameLayout>

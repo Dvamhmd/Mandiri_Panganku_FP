@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "927917296991",
+    "firebase_url": "https://mandiripanganku-0796-default-rtdb.firebaseio.com",
+    "project_id": "mandiripanganku-0796",
+    "storage_bucket": "mandiripanganku-0796.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:927917296991:android:28c18b227aca06a8227aea",
+        "android_client_info": {
+          "package_name": "com.example.mandiripanganku"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBS3r4jluRPAq64BFgj0nk1ov4Zha9SPe8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
