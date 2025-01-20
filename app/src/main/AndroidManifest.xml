@@ -39,12 +39,12 @@
         <activity android:name=".activities.AgricultureActivity" />
         <activity android:name=".activities.FarmingActivity" />
         <activity android:name=".activities.FisheryActivity" />
-        <activity android:name=".activities.MyAgricultureActivity" />
-        <activity android:name=".activities.MyFarmingActivity" />
-        <activity android:name=".activities.MyFisheryActivity" />
-        <activity android:name=".activities.AgrilistActivity" />
-        <activity android:name=".activities.FarmlistActivity" />
-        <activity android:name=".activities.FishlistActivity" />
+        <activity android:name=".activities.projectform.MyAgricultureActivity" />
+        <activity android:name=".activities.projectform.MyFarmingActivity" />
+        <activity android:name=".activities.projectform.MyFisheryActivity" />
+        <activity android:name=".activities.projectlist.AgrilistActivity" />
+        <activity android:name=".activities.projectlist.FarmlistActivity" />
+        <activity android:name=".activities.projectlist.FishlistActivity" />
         <activity android:name=".activities.ClueAgricultureActivity" />
         <activity android:name=".activities.ClueFisheryActivity" />
         <activity android:name=".activities.ClueFarmingActivity" />
@@ -57,6 +57,27 @@
         <activity android:name=".activities.PanduanAyam" />
         <activity android:name=".activities.PanduanBebek" />
         <activity android:name=".activities.PanduanKambing" />
+        <activity android:name=".activities.projectupdate.EditAgricultureActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.projectupdate.EditFarmingActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.projectupdate.EditFisheryActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

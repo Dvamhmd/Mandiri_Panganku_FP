@@ -28,7 +28,7 @@ class ClueFarmingActivity : AppCompatActivity() {
         topBarTitle.text = getString(R.string.panduan_perawatan)
 
         findViewById<ImageView>(R.id.back).setOnClickListener {
-            val intent = Intent(this, HomeActivity::class.java)
+            val intent = Intent(this, FarmingActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
             startActivity(intent)
         }
@@ -104,7 +104,7 @@ class ClueFarmingActivity : AppCompatActivity() {
         onBackPressedDispatcher.addCallback(
             this, object : OnBackPressedCallback(true){
                 override fun handleOnBackPressed() {
-                    val intent = Intent (this@ClueFarmingActivity, HomeActivity::class.java)
+                    val intent = Intent (this@ClueFarmingActivity, FarmingActivity::class.java)
                     startActivity(intent)
                     finish()
                 }

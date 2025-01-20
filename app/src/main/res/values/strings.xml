@@ -109,6 +109,14 @@
     <string name="keluarga_tidak_ditemukan">Keluarga tidak ditemukan</string>
     <string name="pilih_foto">Pilih Foto</string>
     <string name="foto_ternak_txt">foto ternak</string>
+    <string name="nama_ternak">Nama Ternak</string>
+    <string name="nama_tanaman">Nama Tanaman</string>
+    <string name="nama_ikan">Nama Ikan</string>
+    <string name="masukkan_jumlah_ternak">Masukkan jumlah ternak</string>
+    <string name="masukkan_tanggal_mulai">Masukkan tanggal mulai</string>
+    <string name="masukkan_jumlah_bibit">Masukkan jumlah bibit</string>
+    <string name="delete">Hapus</string>
+    <string name="masukkan_jumlah_tanaman">Masukkan jumlah tanaman</string>
 
     <string-array name="dropdown_pertanian">
         <item>Kentang</item>

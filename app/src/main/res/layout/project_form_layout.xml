@@ -3,14 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/my_fishery">
-
-
+    android:id="@+id/my_agriculture">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fillViewport="true" >
+        android:background="@color/main_bg"
+        android:fillViewport="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -19,16 +18,19 @@
             android:layout_marginTop="@dimen/_45sdp"
             android:paddingStart="@dimen/_16sdp"
             android:paddingEnd="@dimen/_16sdp"
-            android:orientation="vertical" >
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/_60sdp" >
 
             <View
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/_16sdp" />
 
+
+            <!--pilih nama-->
             <TextView
+                android:id="@+id/choose"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/pilih_ikan_anda"
                 android:textSize="@dimen/_12ssp"
                 android:textStyle="bold"
                 android:fontFamily="@font/inter" />
@@ -38,15 +40,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/_10sdp"
-
                 android:layout_marginTop="@dimen/_6sdp"
                 android:layout_marginBottom="@dimen/_10sdp"
                 android:background="@drawable/background_not_so_round" />
 
+
+            <!--jumlah-->
             <TextView
+                android:id="@+id/quantiyText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/jumlah_bibit"
                 android:textSize="@dimen/_12ssp"
                 android:textStyle="bold"
                 android:fontFamily="@font/inter"
@@ -57,34 +60,34 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/_10sdp"
-                android:autofillHints="1"
                 android:background="@drawable/background_not_so_round"
-                android:hint="@string/input_bibit"
                 android:inputType="number"
                 android:padding="@dimen/_10sdp"
-                android:textSize="@dimen/_12ssp"
-                tools:ignore="TextContrastCheck,VisualLintTextFieldSize,TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+                android:textSize="@dimen/_12ssp" />
 
+
+            <!--tanggal-->
             <TextView
+                android:id="@+id/startDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tanggal_mulai"
                 android:textSize="@dimen/_12ssp"
                 android:textStyle="bold"
                 android:fontFamily="@font/inter"
                 android:layout_marginBottom="@dimen/_6sdp"/>
 
             <TextView
-                android:id="@+id/startDate"
+                android:id="@+id/plantingDate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/masukkan_tanggal_tanam"
                 android:padding="16dp"
                 android:background="@drawable/background_not_so_round"
                 android:textColor="@android:color/black"
                 android:clickable="true"
                 android:focusable="true"/>
 
+
+            <!--foto-->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -96,7 +99,7 @@
 
             <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_70sdp" >
+                android:layout_height="@dimen/_70sdp">
 
                 <View
                     android:layout_width="match_parent"
@@ -104,18 +107,31 @@
                     android:background="@drawable/background_not_so_round" />
 
                 <ImageView
-                    android:id="@+id/add_photo"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:contentDescription="@string/photo"
-                    android:src="@drawable/add_photo"
-                    tools:ignore="ImageContrastCheck" />
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/background_not_so_round" />
 
             </FrameLayout>
 
+            <Button
+                android:id="@+id/button_select_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pilih_foto"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/orange" />
 
-
+            <Button
+                android:id="@+id/button_cancel_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hapus Foto"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/green" /> <!-- Anda bisa mengganti warna sesuai kebutuhan -->
 
             <View
                 android:layout_width="wrap_content"
@@ -129,14 +145,9 @@
                 android:backgroundTint="@color/orange"
                 android:fontFamily="@font/abhaya_extra"
                 android:text="@string/save"
-                android:textSize="@dimen/_18ssp"
-                tools:ignore="TextContrastCheck" />
-
+                android:textSize="@dimen/_18ssp" />
 
         </LinearLayout>
-
-
-
 
     </ScrollView>
 
