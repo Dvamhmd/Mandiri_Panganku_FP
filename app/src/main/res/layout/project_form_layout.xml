@@ -80,7 +80,7 @@
                 android:id="@+id/plantingDate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="16dp"
+                android:padding="@dimen/_16sdp"
                 android:background="@drawable/background_not_so_round"
                 android:textColor="@android:color/black"
                 android:clickable="true"
