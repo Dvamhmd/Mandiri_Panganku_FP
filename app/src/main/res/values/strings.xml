@@ -120,6 +120,7 @@
     <string name="hapus_foto">Hapus Foto</string>
     <string name="isi">:</string>
     <string name="tanggal_update">Tanggal Update</string>
+    <string name="hapusfoto">Hapus Foto</string>
 
     <string-array name="dropdown_pertanian">
         <item>Kentang</item>
