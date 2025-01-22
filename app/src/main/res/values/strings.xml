@@ -124,7 +124,6 @@
     <string-array name="dropdown_pertanian">
         <item>Kentang</item>
         <item>Bayam</item>
-        <item>Jagung</item>
         <item>Tomat</item>
     </string-array>
 
@@ -132,13 +131,11 @@
         <item>Ayam</item>
         <item>Kambing</item>
         <item>Bebek</item>
-        <item>Sapi</item>
     </string-array>
 
     <string-array name="dropdown_perikanan">
         <item>Lele</item>
         <item>Bawal</item>
-        <item>Nila</item>
         <item>Gurameh</item>
     </string-array>
 

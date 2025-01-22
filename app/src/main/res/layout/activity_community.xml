@@ -23,18 +23,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_12sdp" />
 
-            <include
-                android:id="@+id/chat1"
-                layout="@layout/bubble_chat" />
-
-            <include
-                android:id="@+id/chat2"
-                layout="@layout/bubble_chat" />
-
-            <include
-                android:id="@+id/chat3"
-                layout="@layout/bubble_chat" />
-
         </LinearLayout>
 
     </ScrollView>

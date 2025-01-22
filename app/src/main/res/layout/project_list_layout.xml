@@ -19,7 +19,6 @@
             android:layout_marginStart="@dimen/_16sdp"
             android:layout_marginTop="@dimen/_80sdp"
             android:layout_marginEnd="@dimen/_16sdp"
-            android:layout_marginBottom="@dimen/_60sdp"
             android:orientation="vertical">
 
             <!--Tambah project-->
@@ -79,7 +78,12 @@
                 android:layout_height="wrap_content"
                 android:nestedScrollingEnabled="true" />
 
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_150sdp" />
+
         </LinearLayout>
+
     </ScrollView>
 
     <include
