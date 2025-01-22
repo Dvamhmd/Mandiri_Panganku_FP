@@ -117,6 +117,9 @@
     <string name="masukkan_jumlah_bibit">Masukkan jumlah bibit</string>
     <string name="delete">Hapus</string>
     <string name="masukkan_jumlah_tanaman">Masukkan jumlah tanaman</string>
+    <string name="hapus_foto">Hapus Foto</string>
+    <string name="isi">:</string>
+    <string name="tanggal_update">Tanggal Update</string>
 
     <string-array name="dropdown_pertanian">
         <item>Kentang</item>

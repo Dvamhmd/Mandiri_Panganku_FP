@@ -57,14 +57,7 @@
 
                 </LinearLayout>
 
-                <ImageView
-                    android:id="@+id/notification"
-                    android:layout_width="@dimen/_30sdp"
-                    android:layout_height="@dimen/_30sdp"
-                    android:layout_gravity="center"
-                    android:layout_marginEnd="@dimen/_16sdp"
-                    android:contentDescription="@string/notification"
-                    android:src="@drawable/notif" />
+
             </LinearLayout>
 
             <FrameLayout

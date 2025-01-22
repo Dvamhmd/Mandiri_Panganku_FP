@@ -63,9 +63,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/_10sdp"
                 android:background="@drawable/background_not_so_round"
+                android:importantForAutofill="no"
                 android:inputType="number"
                 android:padding="@dimen/_10sdp"
-                android:textSize="@dimen/_12ssp" />
+                android:text="@string/masukkan_jumlah_tanaman"
+                android:textSize="@dimen/_12ssp"
+                tools:ignore="LabelFor,TouchTargetSizeCheck,VisualLintTextFieldSize" />
 
             <!-- Tanggal Tanam (non-editable) -->
             <TextView
@@ -121,41 +124,60 @@
                 android:id="@+id/button_select_photo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/pilih_foto"
                 android:layout_marginTop="16dp"
-                android:backgroundTint="@color/orange" />
+                android:backgroundTint="@color/orange"
+                android:text="@string/pilih_foto"
+                tools:ignore="TextContrastCheck,VisualLintButtonSize" />
 
             <Button
                 android:id="@+id/button_cancel_photo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Hapus Foto"
                 android:layout_marginTop="8dp"
-                android:backgroundTint="@color/green" /> <!-- Anda bisa mengganti warna sesuai kebutuhan -->
+                android:backgroundTint="@color/green"
+                android:text="@string/hapus_foto"
+                tools:ignore="TextContrastCheck,VisualLintButtonSize" /> <!-- Anda bisa mengganti warna sesuai kebutuhan -->
 
             <View
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/_40sdp" />
 
-            <Button
-                android:id="@+id/save"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:backgroundTint="@color/orange"
-                android:fontFamily="@font/abhaya_extra"
-                android:text="@string/save"
-                android:textSize="@dimen/_18ssp" />
 
-            <Button
-                android:id="@+id/delete"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:backgroundTint="@color/red"
-                android:fontFamily="@font/abhaya_extra"
-                android:text="@string/delete"
-                android:textSize="@dimen/_18ssp" />
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_24sdp"
+                    android:backgroundTint="@color/orange"
+                    android:fontFamily="@font/abhaya_extra"
+                    android:text="@string/save"
+                    android:textSize="@dimen/_18ssp"
+                    tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_24sdp"
+                    android:backgroundTint="@color/red"
+                    android:fontFamily="@font/abhaya_extra"
+                    android:text="@string/delete"
+                    android:textSize="@dimen/_18ssp"
+                    tools:ignore="VisualLintButtonSize" />
+
+            </LinearLayout>
+
 
 
         </LinearLayout>

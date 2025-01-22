@@ -1,78 +1,155 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:padding="@dimen/_16sdp">
-
-    <ImageView
-        android:id="@+id/animalPhoto"
-        android:layout_width="@dimen/_50sdp"
-        android:layout_height="@dimen/_150sdp"
-        android:layout_weight="1"
-        android:contentDescription="@string/foto_ternak_txt"
-        android:scaleType="centerCrop" />
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardBackgroundColor="@color/orange"
+    android:layout_marginBottom="@dimen/_16sdp"
+    app:cardCornerRadius="@dimen/_12sdp">
 
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="2"
-        android:orientation="vertical"
-        android:layout_marginStart="@dimen/_16ssp">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp" >
 
-        <!-- Nama Ternak -->
-        <TextView
-            android:id="@+id/itemNameText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/_16ssp"/>
+        <ImageView
+            android:id="@+id/animalPhoto"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:contentDescription="@string/foto_ternak_txt"
+            android:scaleType="centerCrop"
+            android:src="@drawable/kambing"
+            tools:ignore="ImageContrastCheck" />
 
-        <TextView
-            android:id="@+id/animalName"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/_14ssp" />
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/_16ssp">
 
-        <!-- Jumlah Ternak -->
-        <TextView
-            android:id="@+id/itemQuantityText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/_16ssp"/>
 
-        <TextView
-            android:id="@+id/quantity"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/_14ssp"/>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="UselessParent">
 
-        <!-- Tanggal Mulai -->
-        <TextView
-            android:id="@+id/itemStartDateText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/_16ssp"/>
+                <!-- Nama Pangan -->
+                <TableRow>
 
-        <TextView
-            android:id="@+id/startDate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/_14ssp"/>
 
-        <!-- Terakhir Update -->
-        <TextView
-            android:id="@+id/itemLastUpdateText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/_16ssp"
-            android:text="Terakhir Update"/>
+                    <TextView
+                        android:id="@+id/itemNameText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold"/>
 
-        <TextView
-            android:id="@+id/lastUpdated"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/_14ssp"/>
+                    <TextView
+                        android:text="@string/isi"
+                        android:textSize="@dimen/_12ssp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_5sdp" />
+
+                    <TextView
+                        android:id="@+id/animalName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_12ssp" />
+
+                </TableRow>
+
+
+                <!-- Jumlah Ternak -->
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/itemQuantityText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:text="@string/isi"
+                        android:textSize="@dimen/_12ssp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_5sdp" />
+
+                    <TextView
+                        android:id="@+id/quantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_12ssp"/>
+
+                </TableRow>
+
+
+                <!-- Tanggal Mulai -->
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/itemStartDateText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:text="@string/isi"
+                        android:textSize="@dimen/_12ssp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_5sdp" />
+
+                    <TextView
+                        android:id="@+id/startDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_12ssp"/>
+
+                </TableRow>
+
+
+                <!-- Terakhir Update -->
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/itemLastUpdateText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tanggal_update"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:text="@string/isi"
+                        android:textSize="@dimen/_12ssp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_5sdp" />
+
+                    <TextView
+                        android:id="@+id/lastUpdated"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_12ssp"/>
+                </TableRow>
+
+
+            </TableLayout>
+
+        </LinearLayout>
 
     </LinearLayout>
-</LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
