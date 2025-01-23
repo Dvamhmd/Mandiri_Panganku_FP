@@ -28,14 +28,23 @@
             </intent-filter>
         </activity>
         <activity android:name=".activities.HomeActivity" />
-        <activity android:name=".activities.LoginActivity" />
-        <activity android:name=".activities.RegisterActivity" />
-        <activity android:name=".activities.PasswordActivity" />
+        <activity android:name=".activities.LoginActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".activities.RegisterActivity"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".activities.PasswordActivity"
+            android:windowSoftInputMode="adjustResize"/>
         <activity android:name=".activities.ProfileActivity" />
         <activity android:name=".activities.ReportActivity" />
         <activity
             android:name=".activities.CommunityActivity"
-            android:windowSoftInputMode="adjustResize" />
+            android:exported="true"
+            android:windowSoftInputMode="stateVisible|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".activities.AgricultureActivity" />
         <activity android:name=".activities.FarmingActivity" />
         <activity android:name=".activities.FisheryActivity" />
@@ -58,6 +67,7 @@
         <activity android:name=".activities.PanduanBebek" />
         <activity android:name=".activities.PanduanKambing" />
         <activity android:name=".activities.projectupdate.EditAgricultureActivity"
+            android:windowSoftInputMode="adjustResize"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -65,6 +75,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".activities.projectupdate.EditFarmingActivity"
+            android:windowSoftInputMode="adjustResize"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -72,6 +83,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".activities.projectupdate.EditFisheryActivity"
+            android:windowSoftInputMode="adjustResize"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />

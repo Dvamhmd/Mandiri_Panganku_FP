@@ -149,21 +149,6 @@
                 android:orientation="horizontal"
                 android:weightSum="1">
 
-                <Button
-                    android:id="@+id/save"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_24sdp"
-                    android:backgroundTint="@color/orange"
-                    android:fontFamily="@font/abhaya_extra"
-                    android:text="@string/save"
-                    android:textSize="@dimen/_18ssp"
-                    tools:ignore="TextContrastCheck,VisualLintButtonSize" />
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="1" />
 
                 <Button
                     android:id="@+id/delete"
@@ -175,6 +160,22 @@
                     android:text="@string/delete"
                     android:textSize="@dimen/_18ssp"
                     tools:ignore="VisualLintButtonSize" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_24sdp"
+                    android:backgroundTint="@color/orange"
+                    android:fontFamily="@font/abhaya_extra"
+                    android:text="@string/save"
+                    android:textSize="@dimen/_18ssp"
+                    tools:ignore="TextContrastCheck,VisualLintButtonSize" />
 
             </LinearLayout>
 

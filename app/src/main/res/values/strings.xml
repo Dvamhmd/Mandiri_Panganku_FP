@@ -121,6 +121,7 @@
     <string name="isi">:</string>
     <string name="tanggal_update">Tanggal Update</string>
     <string name="hapusfoto">Hapus Foto</string>
+    <string name="send">kirim pesan</string>
 
     <string-array name="dropdown_pertanian">
         <item>Kentang</item>
